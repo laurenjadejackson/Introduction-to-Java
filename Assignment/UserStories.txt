@@ -1,0 +1,106 @@
+AS A User
+
+I WANT a program that allows a User to either input a sentence using keyboard input, or a file input, or a demo 
+
+SO THAT the program will count the Letter Frequencies of the sentence. 
+
+
+
+EPIC on user interface
+
+GIVEN a user launches the program
+WHEN user launches program
+***THEN user should be presented with "Welcome to my Java Assignment"
+***AND it should print out "Pick an option, Keyboard, Demo, FileInput"
+
+
+GIVEN user has launched the program and been presented to chose an option
+WHEN the user picks Keyboard 
+***THEN the user will be prompted to enter a sentence 
+
+GIVEN the user has chosen a sentence
+WHEN the user enters a sentence and clicks enter
+THEN it should print out "Pick an option, bar chart or table"
+
+
+
+GIVEN the user has launched the program and been presented to chose an option
+WHEN the user picks Demo
+THEN the user will be presented with a demo sentence
+
+GIVEN the user has the demo sentence 
+WHEN the user clicks enter
+THEN it should print out "Pick an option, bar chart or table"
+
+
+
+GIVEN the user has launches the program and been presented to chose an option
+WHEN the user picks FileInput
+THEN the user will be prompted to enter a file
+
+GIVEN the user has chosen a file
+WHEN the users enters the file name and clicks enter
+THEN it should print out "Pick an option, bar chart or table"
+
+
+
+GIVEN the user has clicked enter and chose an option
+WHEN the user picks Bar chart
+THEN the user will be presented with a barchart
+AND the bar chart will have characters up the side
+AND numbers across the bottom
+
+GIVEN the user has clicked enter and chose an option
+WHEN the user picks table
+THEN it should print out a table
+AND the table has character column, frequency column, relative frequency column
+
+
+
+EPIC on Counting Characters 
+
+GIVEN that a User has entered a sentence in some format 
+WHEN the String is passed in
+THEN the String should be split into individual Characters
+AND loop through all the characters to count how many times each one occurs in the split String
+AND the character Count will be printed in the console in an array format
+
+
+
+EPIC on FileInput
+
+GIVEN that a user wants to read text from a file 
+WHEN they enter a file name 
+THEN it will read all the text in the file 
+
+
+
+EPIC on creating a BarChart
+
+GIVEN the Character Count prints out the array of characters
+WHEN I chose to see a BarChart
+THEN all the characters stated in the character count should be in a bar chart layout
+
+GIVEN the bar chart layout is set up
+WHEN the characters in the inputted sentence are counted 
+THEN they should be represented by squares in the bar chart
+AND the bar chart should be printed in the console 
+
+
+
+EPIC on Creating the Table 
+
+GIVEN a string is read in
+WHEN the user selects the table output option
+THEN table headings will print out 
+AND all the characters will be printed under the Characters heading 
+AND the counted Frequencies are printed under the Frequency Heading 
+AND the Relative Frequency is printed under the Relative Frequency heading 
+
+GIVEN the Characters, Frequencies and Relative Frequencies are printed 
+WHEN they are printed to the console
+THEN they should be formatted to the middle of the column under the correct headings
+
+GIVEN the correct information is stored under the correct heading
+WHEN the table is printed to the console
+THEN a Column Resize method should be used to keep the column the correct width
